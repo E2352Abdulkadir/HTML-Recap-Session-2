@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--base href="images/"-->
+    <link rel="stylesheet" href="index.css">
+    <style>
+        /*.h2tags {
+            color: violet;
+        }
+
+        #n3h2 {
+            color: yellow;
+        } */
+
+    </style>
+</head>
+
+<body>
+    <p id="para1">Lorem ipsum dolor sit amet.</p>
+    <a href="#end">sayfa sonuna git</a>
+    <h2 class="h2tags n1h2tag" id="Top">Unordered List</h2>
+    <!-- Listeler Islenecektir-->
+    <!-- ul>li*5{item $} -->
+
+    <ul> Item List             
+        <li>Item1
+            <ul>
+                <li>Sub-Item-1</li>     <!-- ul>li*2{Sub-Item $} -->
+                <li>Sub-Item-2</li>
+                <ul>
+                    <li>Sub-Sub-Item-1</li>
+                </ul>
+            </ul>
+        </li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
+        <li>Item5</li>
+    </ul>
+    <hr>
+    <h2 class="h2tags">Ordered List</h2>
+    <!--Ordered List/Düzenli Liste-->
+
+    <ol>  <!-- ol start="5" ile 5ten baslar ve type="A" ile tip blirler -->
+        <li>item1</li>
+        <li>item2
+            <ol>
+                <li>Sub-Item1</li>
+                <li>Sub-Item2</li>
+                <li>Sub-Item3</li>
+            </ol>
+        </li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+    </ol>
+    <h2 id="n3h2">Definition List</h2>
+
+    <dl>
+        <dt>Sclae</dt>
+        <dd> A device used to accurately measure the weight of ingredients</dd>
+        <dt>Sashimi</dt>
+        <dd>Sliced raw fish that is served with condiments such as shredded daikon radish or ginger root, wasabi and soy sauce</dd>
+    </dl>
+
+    <h3>Images</h3>
+
+    <img src="images/barney.png" alt="Barney" width="100">    <!-- alt="" resim görünmezse bilgi verir-->
+    <img src="https://upload.wikimedia.org/wikipedia/tr/b/bb/Fred_%C3%87akmakta%C5%9F.jpg" alt="Fred cakmaktas" width="50">
+
+    <h3>Table</h3>
+
+    <table border="1">   <!-- Border cizgi kalinligi-->
+        <thead>     <!-- Browserin bunun altini baslik olarak anlamasi icin-->
+            <tr>
+                <th>Kurs Adi</th>
+                <th>Kurs Saati</th>
+                <th>Ders Adedi</th>
+            </tr>
+        </thead>
+        <tbody>    <!-- Browserin bunun altini gövde olarak anlamasi icin-->
+            <tr>
+                <td>HTML</td>
+                <td>45</td>
+                <td>300</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>35</td>
+                <td rowspan="2">200</td>     <!--Sütundaki 2 hücre birlesiyor-->
+            </tr>
+            <tr>
+                <td colspan="2">JavaScript</td> <!--Satirdaki 2 hücre birlesti-->
+            </tr>
+        </tbody>
+        <tfoot>     <!-- Browserin bunun altini taban olarak anlamasi icin-->
+            <tr>
+                <td colspan="2">Toplam</td>
+                <td>500</td>
+            </tr>
+
+
+        </tfoot>
+    </table>
+
+    <h2 id="end">Links</h2>
+
+    <a href="https://www.imdb.com/" target="_blank">IMDB</a>
+    <br>
+    <a href="index2.html">index2html</a>
+    <!-- a href ile link atiyoruz -->
+    <br>
+    <a href="images/barney.png" target="_blank">Barney.Png</a>
+    <br>
+    <a href="index2.rar" target="_blank">indir</a>
+    <br>
+    <a href="index2.html"> <img src="images/barney.png" alt="barney" width="100"> </a>
+    <br>
+    <a href="#top">Basa Dön</a>
+
+
+</body>
+</html>
